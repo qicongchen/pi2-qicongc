@@ -13,7 +13,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.cas.TOP_Type;
 
 /** Include the beginning and end positions 
- * Updated by JCasGen Sun Sep 13 16:09:02 EDT 2015
+ * Updated by JCasGen Sun Sep 13 18:03:51 EDT 2015
  * @generated */
 public class Span_Type extends TOP_Type {
   /** @generated 

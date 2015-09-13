@@ -11,7 +11,7 @@ import org.apache.uima.jcas.cas.TOP;
 
 
 /** Include the Text, the correct label, and the score of an answer.
- * Updated by JCasGen Sun Sep 13 16:09:02 EDT 2015
+ * Updated by JCasGen Sun Sep 13 18:03:51 EDT 2015
  * XML source: /Users/yuchenluo/git/pi2-qicongc/pi2-qicongc/src/main/resources/pi2-qicongc-typesystem.xml
  * @generated */
 public class Answer extends TOP {
@@ -128,6 +128,50 @@ public class Answer extends TOP {
     if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_Text == null)
       jcasType.jcas.throwFeatMissing("Text", "Answer");
     jcasType.ll_cas.ll_setRefValue(addr, ((Answer_Type)jcasType).casFeatCode_Text, jcasType.ll_cas.ll_getFSRef(v));}    
+   
+    
+  //*--------------*
+  //* Feature: Id
+
+  /** getter for Id - gets Unique answer id.
+   * @generated
+   * @return value of the feature 
+   */
+  public String getId() {
+    if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_Id == null)
+      jcasType.jcas.throwFeatMissing("Id", "Answer");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Answer_Type)jcasType).casFeatCode_Id);}
+    
+  /** setter for Id - sets Unique answer id. 
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setId(String v) {
+    if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_Id == null)
+      jcasType.jcas.throwFeatMissing("Id", "Answer");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Answer_Type)jcasType).casFeatCode_Id, v);}    
+   
+    
+  //*--------------*
+  //* Feature: QuestionId
+
+  /** getter for QuestionId - gets The question this answer refers to.
+   * @generated
+   * @return value of the feature 
+   */
+  public String getQuestionId() {
+    if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_QuestionId == null)
+      jcasType.jcas.throwFeatMissing("QuestionId", "Answer");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Answer_Type)jcasType).casFeatCode_QuestionId);}
+    
+  /** setter for QuestionId - sets The question this answer refers to. 
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setQuestionId(String v) {
+    if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_QuestionId == null)
+      jcasType.jcas.throwFeatMissing("QuestionId", "Answer");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Answer_Type)jcasType).casFeatCode_QuestionId, v);}    
   }
 
     

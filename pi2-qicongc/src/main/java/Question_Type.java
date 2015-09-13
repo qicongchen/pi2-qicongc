@@ -13,7 +13,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.cas.TOP_Type;
 
 /** Include the Text of a question.
- * Updated by JCasGen Sun Sep 13 16:09:02 EDT 2015
+ * Updated by JCasGen Sun Sep 13 18:03:51 EDT 2015
  * @generated */
 public class Question_Type extends TOP_Type {
   /** @generated 
@@ -92,6 +92,30 @@ public class Question_Type extends TOP_Type {
     ll_cas.ll_setDoubleValue(addr, casFeatCode_Precision, v);}
     
   
+ 
+  /** @generated */
+  final Feature casFeat_Id;
+  /** @generated */
+  final int     casFeatCode_Id;
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @return the feature value 
+   */ 
+  public String getId(int addr) {
+        if (featOkTst && casFeat_Id == null)
+      jcas.throwFeatMissing("Id", "Question");
+    return ll_cas.ll_getStringValue(addr, casFeatCode_Id);
+  }
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param v value to set 
+   */    
+  public void setId(int addr, String v) {
+        if (featOkTst && casFeat_Id == null)
+      jcas.throwFeatMissing("Id", "Question");
+    ll_cas.ll_setStringValue(addr, casFeatCode_Id, v);}
+    
+  
 
 
 
@@ -111,6 +135,10 @@ public class Question_Type extends TOP_Type {
  
     casFeat_Precision = jcas.getRequiredFeatureDE(casType, "Precision", "uima.cas.Double", featOkTst);
     casFeatCode_Precision  = (null == casFeat_Precision) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_Precision).getCode();
+
+ 
+    casFeat_Id = jcas.getRequiredFeatureDE(casType, "Id", "uima.cas.String", featOkTst);
+    casFeatCode_Id  = (null == casFeat_Id) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_Id).getCode();
 
   }
 }

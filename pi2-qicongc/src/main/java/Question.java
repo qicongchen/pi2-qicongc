@@ -11,7 +11,7 @@ import org.apache.uima.jcas.cas.TOP;
 
 
 /** Include the Text of a question.
- * Updated by JCasGen Sun Sep 13 16:09:02 EDT 2015
+ * Updated by JCasGen Sun Sep 13 18:03:51 EDT 2015
  * XML source: /Users/yuchenluo/git/pi2-qicongc/pi2-qicongc/src/main/resources/pi2-qicongc-typesystem.xml
  * @generated */
 public class Question extends TOP {
@@ -106,6 +106,28 @@ public class Question extends TOP {
     if (Question_Type.featOkTst && ((Question_Type)jcasType).casFeat_Precision == null)
       jcasType.jcas.throwFeatMissing("Precision", "Question");
     jcasType.ll_cas.ll_setDoubleValue(addr, ((Question_Type)jcasType).casFeatCode_Precision, v);}    
+   
+    
+  //*--------------*
+  //* Feature: Id
+
+  /** getter for Id - gets Unique question id.
+   * @generated
+   * @return value of the feature 
+   */
+  public String getId() {
+    if (Question_Type.featOkTst && ((Question_Type)jcasType).casFeat_Id == null)
+      jcasType.jcas.throwFeatMissing("Id", "Question");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Question_Type)jcasType).casFeatCode_Id);}
+    
+  /** setter for Id - sets Unique question id. 
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setId(String v) {
+    if (Question_Type.featOkTst && ((Question_Type)jcasType).casFeat_Id == null)
+      jcasType.jcas.throwFeatMissing("Id", "Question");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Question_Type)jcasType).casFeatCode_Id, v);}    
   }
 
     

@@ -13,7 +13,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.cas.TOP_Type;
 
 /** Include the Text, the correct label, and the score of an answer.
- * Updated by JCasGen Sun Sep 13 16:09:02 EDT 2015
+ * Updated by JCasGen Sun Sep 13 18:03:51 EDT 2015
  * @generated */
 public class Answer_Type extends TOP_Type {
   /** @generated 
@@ -116,6 +116,54 @@ public class Answer_Type extends TOP_Type {
     ll_cas.ll_setRefValue(addr, casFeatCode_Text, v);}
     
   
+ 
+  /** @generated */
+  final Feature casFeat_Id;
+  /** @generated */
+  final int     casFeatCode_Id;
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @return the feature value 
+   */ 
+  public String getId(int addr) {
+        if (featOkTst && casFeat_Id == null)
+      jcas.throwFeatMissing("Id", "Answer");
+    return ll_cas.ll_getStringValue(addr, casFeatCode_Id);
+  }
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param v value to set 
+   */    
+  public void setId(int addr, String v) {
+        if (featOkTst && casFeat_Id == null)
+      jcas.throwFeatMissing("Id", "Answer");
+    ll_cas.ll_setStringValue(addr, casFeatCode_Id, v);}
+    
+  
+ 
+  /** @generated */
+  final Feature casFeat_QuestionId;
+  /** @generated */
+  final int     casFeatCode_QuestionId;
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @return the feature value 
+   */ 
+  public String getQuestionId(int addr) {
+        if (featOkTst && casFeat_QuestionId == null)
+      jcas.throwFeatMissing("QuestionId", "Answer");
+    return ll_cas.ll_getStringValue(addr, casFeatCode_QuestionId);
+  }
+  /** @generated
+   * @param addr low level Feature Structure reference
+   * @param v value to set 
+   */    
+  public void setQuestionId(int addr, String v) {
+        if (featOkTst && casFeat_QuestionId == null)
+      jcas.throwFeatMissing("QuestionId", "Answer");
+    ll_cas.ll_setStringValue(addr, casFeatCode_QuestionId, v);}
+    
+  
 
 
 
@@ -139,6 +187,14 @@ public class Answer_Type extends TOP_Type {
  
     casFeat_Text = jcas.getRequiredFeatureDE(casType, "Text", "Text", featOkTst);
     casFeatCode_Text  = (null == casFeat_Text) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_Text).getCode();
+
+ 
+    casFeat_Id = jcas.getRequiredFeatureDE(casType, "Id", "uima.cas.String", featOkTst);
+    casFeatCode_Id  = (null == casFeat_Id) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_Id).getCode();
+
+ 
+    casFeat_QuestionId = jcas.getRequiredFeatureDE(casType, "QuestionId", "uima.cas.String", featOkTst);
+    casFeatCode_QuestionId  = (null == casFeat_QuestionId) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_QuestionId).getCode();
 
   }
 }

@@ -11,7 +11,7 @@ import org.apache.uima.jcas.cas.TOP;
 
 
 /** Include the Span and the Spans of tokens, bigrams and trigrams. 
- * Updated by JCasGen Sun Sep 13 16:09:02 EDT 2015
+ * Updated by JCasGen Sun Sep 13 18:03:51 EDT 2015
  * XML source: /Users/yuchenluo/git/pi2-qicongc/pi2-qicongc/src/main/resources/pi2-qicongc-typesystem.xml
  * @generated */
 public class Text extends TOP {
